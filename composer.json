@@ -1,27 +1,49 @@
 {
-    "name": "maxim/nordea_api",
-    "authors": [
-        {
-            "name": "scilganon",
-            "email": "scilganon@bigmir.net"
-        }
-    ],
-    "require": {
-        "robrichards/wse-php": "^2.0",
-        "robrichards/xmlseclibs": "*",
-        "weew/helpers-string": "^1.10",
-        "sabre/dav": "^3.2",
-        "phpro/soap-client": "^0.5.2",
-        "guzzlehttp/guzzle": "^6.2",
-        "http-interop/http-factory-guzzle": "^0.1.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Profit\\Nordea\\API\\": "src"
-        }
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^6.3",
-        "zendframework/zend-code": "^3.0.4"
+  "name": "maxim/nordea_api",
+  "authors": [
+    {
+      "name": "scilganon",
+      "email": "scilganon@bigmir.net"
     }
+  ],
+  "require": {
+    "robrichards/wse-php": "^2.0",
+    "robrichards/xmlseclibs": "*",
+    "weew/helpers-string": "^1.10",
+    "sabre/dav": "^3.2",
+    "php": ">=7.1.3",
+    "guzzlehttp/guzzle": "^6.3",
+    "phpro/soap-client": "^0.7.8",
+    "psr/http-factory": "^1.0",
+    "guzzlehttp/promises": "^1.3.1",
+    "guzzlehttp/psr7": "^1.4.2",
+    "jakub-onderka/php-parallel-lint": "^1.0",
+    "ocramius/package-versions": "^1.1.2",
+    "ocramius/proxy-manager": "^2.0.2",
+    "php-http/client-common": "^1.6",
+    "php-http/discovery": "^1.3",
+    "php-http/guzzle6-adapter": "^1.1.1",
+    "php-http/httplug": "^1.1",
+    "php-http/message": "^1.6",
+    "php-http/message-factory": "^1.0",
+    "php-http/mock-client": "^1.0",
+    "php-vcr/php-vcr": "~1.3.2",
+    "php-vcr/phpunit-testlistener-vcr": "3.0",
+    "phpro/grumphp": "~0.11",
+    "phpspec/phpspec": "~3.2",
+    "phpspec/prophecy": "~1.7",
+    "phpunit/phpunit": "~6.0",
+    "psr/http-message": "^1.0",
+    "squizlabs/php_codesniffer": "~2.7",
+    "zendframework/zend-code": "^3.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Profit\\Nordea\\API\\": "src"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.3",
+    "zendframework/zend-code": "^3.0.4"
+  }
 }

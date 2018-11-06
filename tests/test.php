@@ -40,7 +40,8 @@ foreach($types as $type){
     $clientBuilder->addClassMap($type);
 }
 
-$clientBuilder->withHandler(\Phpro\SoapClient\Soap\Handler\GuzzleHandle::createWithDefaultClient());
+
+$clientBuilder->withHandler(\Phpro\SoapClient\Soap\Handler\HttPlugHandle::createWithDefaultClient());
 
 $wsse = new WsseMiddleware($key_file, $key_file);
 //$wsse->withAllHeadersSigned()->withEncryption($key_file);
